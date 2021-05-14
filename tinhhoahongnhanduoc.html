@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Nhập số tiền:'));
+    let s;
+    if (a <= 200000) {
+        s = a * (3 / 100);
+        alert('Tiền hoa hồng của bạn là: ' + s);
+    }
+    if (a <= 500000 && a > 200000) {
+        s = ((200000 * (3 / 100)) + (a * (5 / 100)));
+        alert('Tiền hoa hồng của bạn là: ' + s);
+    }
+    if (a > 500000) {
+        s = ((200000*(3/100)) + (500000*(5/100)) + (a*(10/100)));
+        alert('Tiền hoa hồng của bạn là: ' + s);
+    }
+</script>
+</body>
+</html>

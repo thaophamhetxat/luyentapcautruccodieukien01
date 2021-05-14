@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = parseFloat(prompt('Nhập tổng số phút gọi điển của cả nhà:'))
+  let s;
+  if (a>60){
+    s = a*1200;
+    alert('số tiền mà gia đình cần trả là: ' + s + ' VND');
+  }
+  if (a<=60 && a>10){
+    s = a*1300;
+    alert('số tiền mà gia đình cần trả là: ' + s + ' VND');
+  }
+  if (a<10){
+    s = a*1400;
+    alert('số tiền mà gia đình cần trả là: ' + s + ' VND');
+  }
+</script>
+</body>
+</html>
